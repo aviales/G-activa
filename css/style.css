@@ -148,7 +148,7 @@
 
 .textSectionTwo {
     position: relative;
-    bottom: 70%;
+    bottom: 80%;
     right: -45%;
     margin-right: 5%;
     max-width: 45%;
@@ -156,7 +156,7 @@
 
 .textSectionTwo p {
     font-size: var(--biggestFontSize);
-    font-weight: 300;
+    font-weight: 200;
     line-height: 60px;
 }
 
