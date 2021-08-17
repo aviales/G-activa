@@ -1,0 +1,100 @@
+$firstColor: #fff;
+$secondColor: #000;
+$accentColor: rgb(255, 110, 110);
+$navColor: rgb(236, 236, 236);
+$thirdColor: rgb(230, 221, 215);
+
+/*=========== about ===========*/
+
+.about{
+    height: fit-content;
+    width: 100%;
+    position: relative; 
+}
+.aboutBg{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+.aboutBlur{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: linear-gradient(130deg,
+              rgba(66, 65, 65, 0.4),
+              rgba(87, 87, 87, 0.2));
+    backdrop-filter: blur(15px);
+}
+.aboutContainer{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: fit-content;
+}
+.aboutSubtitle{
+    flex: 1 1 250px;
+    max-width: 70vw;
+    max-width: 900px;
+    color: $firstColor;
+    font-family: 'Poppins', sans-serif;
+    font-size: var(--biggerFontSize);
+    line-height: 70px;
+    margin: 15vh 5% 10vh 5%;
+}
+.aboutDescription{
+    flex: 1 1 250px;
+    margin-top: 10%;
+    margin: 10vh 5% 5% 5%;
+    font-size: medium;
+    line-height: 35px;
+}
+.aboutSection{
+    text-align: center;
+    flex: 1 100%;
+    height: fit-content;
+    margin: 0 5% 5% 5%;
+    padding: 2%;
+    border-radius: 16px;
+    background: linear-gradient(130deg,
+              rgba(251,251,254,.5),
+              rgba(251,251,254,.5));
+    backdrop-filter: blur(10px);
+}
+.aboutSection > h2{
+    font-size: var(--biggerFontSize);
+    font-weight: 200;
+    letter-spacing: 5px;
+}
+.aboutPeople{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 10vh;
+}
+.people{
+    height: 25vw;
+    width: 25vw;
+    margin: 80px;
+    margin-top: 100px;
+    position: relative;
+}
+.people > img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: 50% 30%;
+    top: 50px;
+}
+.people > p{
+    font-size: var(--mediumFontSize);
+    margin-top: 5%;
+}
+.people > p > em{
+    font-style: normal;
+    font-family: 'Poppins', sans-serif;
+    font-size: var(--bigFontSize);
+    font-weight: 500;
+    line-height: 45px;
+}

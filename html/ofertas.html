@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--============== scrollReveal ==================-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--============== boxIcons ==================-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!--============== bootstrap.css ==================-->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!--========== swiperCss ==========-->
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+
+    <!--============== normalizeCss ==================-->
+    <link rel="stylesheet" href="../css/normalize.css">
+
+    <!--============== css ==================-->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!--============== fonts ==================-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100&family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+
+    <!--============== SEO ==================-->
+    <meta name="keywords" content="aerolínea argentina, agencia de viaje, vuelos, viajar, pasajes, Paris, Barcelona, Santorini, viajar a españa, viajar a francia, viajar a grecia">
+    <meta name="description" content="Mira las ofertas que tenemos para vos en TravelNow, viaja hoy no pienses mas.">
+    <title>TravelNow - Ofertas</title>
+    <link rel="icon" href="../img/genericas/plane_solid.png">
+</head>
+
+<body>
+    <!--============== navBar ==================-->
+    <div class="gradientNav" id="gradientNav"></div>
+    <header class="navBar">
+        <a href="index.html" class="logo anchorId">travelnow</a>
+        <nav class="navMenu" id="navMenuId">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li>
+                    <a href="destinos.html" class="hideMenu" id="hideMenu">Destinos</a>
+                    <ul class="subMenu" id="subMenu">
+                        <a href="destinos.html#destino__0">
+                            <li class="subMenu1">Japan</li>
+                        </a>
+                        <a href="destinos.html#destino__1">
+                            <li class="subMenu2">Bali</li>
+                        </a>
+                        <a href="destinos.html#destino__2">
+                            <li class="subMenu3">Vietnam</li>
+                        </a>
+                    </ul>
+                </li>
+                <li><a href="ofertas.html" class="active">Ofertas</a></li>
+                <li><a href="about.html">Acerca de</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="navToggle" id="navToggleId">
+            <i class='bx bx-menu'></i>
+        </div>
+        <div class="navGoUp">
+            <a href="#top"><i class='bx bxs-arrow-to-top'></i></a></i>
+        </div>
+    </header>
+
+    <!--============== intro ==================-->
+    <div class="intro"></div>
+    <div class="outro"></div>
+    <div class="introSlider"></div>
+
+    <!--============== ofertas ==================-->
+    <main class="ofertas" id="top">
+        <img src="../img/genericas/generic_4.jpg" class="ofertasBg" alt="Hombre en cima de montaña">
+        <div class="ofertasBlur"></div>
+        <div class="cardContainer">
+            <div class="card">
+                <img src="../img/destinos/paris/paris_1.jpg" alt="Calle de París">
+                <div class="cardOverlay">
+                    <div class="cardData">
+                        <h1 class="cardTitle"><a href="#destino__0">París</a></h1>
+                        <p class="cardDescription">París es la capital de Francia y una de las grandes ciudades europeas. Es para muchos el destino turístico más romántico y popular de todo el planeta.
+                        </p>
+                        <button class="button cardPrice"><a href="#destino__0" class="text">Precio: $2000</a> <i
+                                class='bx bxs-chevron-right'></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../img/destinos/barcelona/barcelona_1.jpg" alt="Calle de Barcelona">
+                <div class="cardOverlay">
+                    <div class="cardData">
+                        <h2 class="cardTitle"><a href="#destino__1">Barcelona</a></h2>
+                        <p class="cardDescription">Barcelona es una ciudad llena de originales opciones de ocio que animan a visitarla una y otra vez. Abierta al mar Mediterráneo y afamada por Gaudí y su arquitectura modernista
+                        </p>
+                        <button class="button cardPrice"><a href="#destino__1" class="text">Precio: $1700</a> <i
+                                class='bx bxs-chevron-right'></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../img/destinos/santorini/santorini_1.jpg" alt="Costa de Santorini">
+                <div class="cardOverlay">
+                    <div class="cardData">
+                        <h2 class="cardTitle"><a href="#destino__2">Santorini</a></h2>
+                        <p class="cardDescription">Se trata de un lugar de espectacular belleza natural, con una caldera volcánica inundada que forma una gran laguna de 12 kilómetros de largo y rodeada de acantilados de hasta 300 metros de altura.</p>
+                        <button class="button cardPrice"><a href="#destino__2" class="text">Precio: $2400</a> <i
+                                class='bx bxs-chevron-right'></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!--============== destinos ==================-->
+    <!--============== destino cero ==================-->
+    <div class="popupSubDestinos" id="popupSubDestinosCero">
+        <div class="popupBackground"></div>
+        <div class="popupClose" id="popupClose"><i class='bx bx-x'></i></div>
+        <div class="swiper-container swiperPopUp">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="../img/destinos/paris/paris_3.jpg" alt="Torre eiffel"></div>
+                <div class="swiper-slide"><img src="../img/destinos/paris/paris_2.jpg" alt="Gárgolas clásicas en París"></div>
+                <div class="swiper-slide"><img src="../img/destinos/paris/paris_6.jpg" alt="Peatonal en París"></div>
+                <div class="swiper-slide"><img src="../img/destinos/paris/paris_4.jpg" alt="Pila de cruasanes"></div>
+                <div class="swiper-slide"><img src="../img/destinos/paris/paris_5.jpg" alt="Pirámide del museo"></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+    <section class="subDestinos" id="destino__0">
+        <div class="destinosDiv">
+            <p>París</p>
+        </div>
+        <div class="subDestinos__seccion">
+            <div class="subDestinos__seccion__capsula">
+                <div class="subDestinos__seccion__capsula__data">
+                    <p class="letterSpacing">capsula <em>1</em></p>
+                    <h3>Atrevete a conocer París</h3>
+                    <p>Visitar París es el deseo de muchos turistas por sus magníficos monumentos, sus calles de época y sus grandes boulevares. Además de ser una de las capitales gastronómicas más reputadas del mundo, París seduce por su ambiente lleno
+                        de romanticismo y lujo.
+                    </p>
+                </div>
+                <div class="subDestinos__seccion__capsula__imgContainer capsula__imgCero">
+                    <img src="../img/destinos/paris/paris_3.jpg" alt="Torre eiffel">
+                </div>
+            </div>
+            <div class="subDestinos__seccion__capsula reverse">
+
+                <div class="subDestinos__seccion__capsula__imgContainer capsula__imgCero">
+                    <img src="../img/destinos/paris/paris_2.jpg" alt="Gárgolas clásicas en París">
+                </div>
+                <div class="subDestinos__seccion__capsula__data">
+                    <p class="letterSpacing">capsula <em>2</em></p>
+                    <h3>Descubre la increíble arquitectura</h3>
+                    <p>La arquitectura parisina se puede sintetizar como un crisol de estilos arquitectónicos, sin duda no dejaran a ningún turista indiferente. <br> En París podrás encontrar edificaciones de la antigüedad, de la edad media, Clasista y eclecticista.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="subDestinos__img">
+            <img id="subDestinos__imgCero" src="../img/destinos/paris/paris_1.jpg" alt="Calle de París">
+        </div>
+        <div class="destinosDiv">
+            <p>Una experiencia inolvidable</p>
+        </div>
+        <div class="subDestinos__seccion" id="markCero">
+            <div class="subDestinos__seccion__capsula">
+                <div class="subDestinos__seccion__capsula__data">
+                    <p class="letterSpacing">capsula <em>3</em></p>
+                    <h3>Adentrate en las bellas calles de la ciudad</h3>
+                    <p>Todos los días y durante todo el año, el céntrico barrio de Les Halles queda reservado a los peatones. <br> Se puede pasear en torno al centre Pompidou después de visitar el museo, comprar recuerdos en familia bajo la canopée de Les
+                        Halles y tomar un café en alguna terraza de la rue Montorgueil.
+                    </p>
+                </div>
+                <div class="subDestinos__seccion__capsula__imgContainer capsula__imgCero">
+                    <img src="../img/destinos/paris/paris_6.jpg" alt="Peatonal en París">
+                </div>
+            </div>
+            <div class="subDestinos__seccion__capsula reverse">
+                <div class="subDestinos__seccion__capsula__imgContainer capsula__imgCero">
+                    <img src="../img/destinos/paris/paris_4.jpg" alt="Pila de cruasanes">
+                </div>
+                <div class="subDestinos__seccion__capsula__data">
+                    <p class="letterSpacing">capsula <em>4</em></p>
+                    <h3>El clásico croissant parisino</h3>
+                    <p>El croissant es un clásico que ningún turista podrá dejar pasar, es una de las delicias de francia, que aunque tiene un origen vienés, los franceses adaptaron como suyo y lo hicieron parte de su cultura. <br> Luego de un paseo por
+                        la ciudad disfrutar una de estas delicias es sin duda algo inolvidable.
+                    </p>
+                </div>
+            </div>
+            <div class="subDestinos__seccion__capsula">
+                <div class="subDestinos__seccion__capsula__data">
+                    <p class="letterSpacing">capsula <em>5</em></p>
+                    <h3>Finaliza tu aventura en el Museo del Louvre</h3>
+                    <p>Este museo fue formado a partir de las colecciones de la monarquía francesa y las expoliaciones realizadas durante el imperio Napoleónico. <br> La colección del Louvre comprende cerca de 300.000 obras anteriores a 1948, de las que
+                        se exponen aproximadamente 35.000. <br> Un paseo por este museo sera destino infaltable en un viaje a París.
+                    </p>
+                </div>
+                <div class="subDestinos__seccion__capsula__imgContainer capsula__imgCero">
+                    <img src="../img/destinos/paris/paris_5.jpg" alt="Pirámide del museo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--============== destino uno ==================-->
+    <div class="popupSubDestinos" id="popupSubDestinosUno">
+        <div class="popupBackground"></div>
+        <div class="popupClose" id="popupClose"><i class='bx bx-x'></i></div>
+        <div class="swiper-container swiperPopUp">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="../img/destinos/barcelona/barcelona_5.jpg" alt="Catedral sagrada familia"></div>
+                <div class="swiper-slide"><img src="../img/destinos/barcelona/barcelona_4.jpg" alt="Calle de barcelona"></div>
+                <div class="swiper-slide"><img src="../img/destinos/barcelona/barcelona_2.jpg" alt="Vista aérea del parque"></div>
+                <div class="swiper-slide"><img src="../img/destinos/barcelona/barcelona_6.jpg" alt="vista de la fachada del edificio"></div>
+                <div class="swiper-slide"><img src="../img/destinos/barcelona/barcelona_3.jpg" alt="Alimentos sobre una mesa"></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+    <section class="subDestinos" id="destino__1">
+        <div class="destinosDiv">
+            <p>Barcelona</p>
+        </div>
+        <div class="subDestinos__seccion">
+            <div class="subDestinos__seccion__capsula">
+                <div class="subDestinos__seccion__capsula__data">
+                    <p class="letterSpacing">capsula <em>1</em></p>
+                    <h3>Atrevete a conocer Barcelona</h3>
+                    <p>Pasear por sus barrios y plazas, conocer sus museos y disfrutar de sus playas es algo que sin duda te deslumbrara. <br> Barcelona es una ciudad llena de cultura y arquitectura en donde encontraras un destino soñado.
+                    </p>
+                </div>
+                <div class="subDestinos__seccion__capsula__imgContainer capsula__imgUno">
+                    <img src="../img/destinos/barcelona/barcelona_5.jpg" alt="Catedral sagrada familia">
+                </div>
+            </div>
+            <div class="subDestinos__seccion__capsula reverse">
+                <div class="subDestinos__seccion__capsula__imgContainer capsula__imgUno">
+                    <img src="../img/destinos/barcelona/barcelona_4.jpg" alt="Calle de barcelona">
+                </div>
+                <div class="subDestinos__seccion__capsula__data">
+                    <p class="letterSpacing">capsula <em>2</em></p>
+                    <h3>Adentrate en sus preciosas calles</h3>
+                    <p>Las angostas y laberínticas calles medievales del Barrio Gótico de Barcelona componen el escenario ideal para disfrutar del centro de la ciudad sin prisas, deleitándose con los restos que se conservan del glorioso pasado de la ciudad.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="subDestinos__img">
+            <img id="subDestinos__imgUno" src="../img/destinos/barcelona/barcelona_1.jpg" alt="Calle de barcelona">
+        </div>
+        <div class="destinosDiv">
+            <p>Una experiencia inolvidable</p>
+        </div>
+        <div class="subDestinos__seccion" id="markUno">
+            <div class="subDestinos__seccion__capsula">
+                <div class="subDestinos__seccion__capsula__data">
+                    <p class="letterSpacing">capsula <em>3</em></p>
+                    <h3>Visita el Parque Güell</h3>
+                    <p>Con una extensión de más de 17 hectáreas, el Parque Güell está cubierto por formas onduladas, columnas con aspecto de árboles, figuras de animales y formas geométricas. <br> El Parque Güell es un lugar mágico y peculiar que siempre
+                        sorprende a sus visitantes. Una visita a Barcelona nunca estaría completa sin un paseo por el Parque Güell.
+                    </p>
+                </div>
+                <div class="subDestinos__seccion__capsula__imgContainer capsula__imgUno">
+                    <img src="../img/destinos/barcelona/barcelona_2.jpg" alt="Vista aérea del parque">
+                </div>
+            </div>
+            <div class="subDestinos__seccion__capsula reverse">
+                <div class="subDestinos__seccion__capsula__imgContainer capsula__imgUno">
+                    <img src="../img/destinos/barcelona/barcelona_6.jpg" alt="vista de la fachada del edificio">
+                </div>
+                <div class="subDestinos__seccion__capsula__data">
+                    <p class="letterSpacing">capsula <em>4</em></p>
+                    <h3>Toma un tour en la Casa Batlló</h3>
+                    <p>Tras la fascinante fachada de la Casa Batlló se oculta un mundo fantástico en el que, los visitantes pueden descubrir y disfrutar el sorprendente universo de Gaudí. <br> Una vez en el interior del llamativo edificio de la Casa Batlló,
+                        los visitantes podrán conocer cada uno de sus curiosos rincones, destacando el atractivo patio de luces y la azotea con sus míticas chimeneas, una de las partes más famosas de la casa.
+                    </p>
+                </div>
+            </div>
+            <div class="subDestinos__seccion__capsula">
+                <div class="subDestinos__seccion__capsula__data">
+                    <p class="letterSpacing">capsula <em>5</em></p>
+                    <h3>Termina tu aventura en el Mercado de la Boquería</h3>
+                    <p>Es un céntrico mercado municipal que se encuentra en Las Ramblas de Barcelona. Se trata del lugar ideal para comprar productos frescos, aunque en la actualidad el mercado se ha convertido en una llamativa atracción turística. <br>                        Una visita por este punto emblemático de la ciudad es sin duda indispensable para cualquier turista que disfrute de la gastronomía.
+                    </p>
+                </div>
+                <div class="subDestinos__seccion__capsula__imgContainer capsula__imgUno">
+                    <img src="../img/destinos/barcelona/barcelona_3.jpg" alt="Alimentos sobre una mesa">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--============== destino dos ==================-->
+    <div class="popupSubDestinos" id="popupSubDestinosDos">
+        <div class="popupBackground"></div>
+        <div class="popupClose" id="popupClose"><i class='bx bx-x'></i></div>
+        <div class="swiper-container swiperPopUp">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="../img/destinos/santorini/santorini_3.jpg" alt="Costas de Santorini"></div>
+                <div class="swiper-slide"><img src="../img/destinos/santorini/santorini_4.jpg" alt="Peatonal de Santorini"></div>
+                <div class="swiper-slide"><img src="../img/destinos/santorini/santorini_2.jpg" alt="La playa roja"></div>
+                <div class="swiper-slide"><img src="../img/destinos/santorini/santorini_6.jpg" alt="Comida de grecia"></div>
+                <div class="swiper-slide"><img src="../img/destinos/santorini/santorini_5.jpg" alt="Partenón típico griego"></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+    <section class="subDestinos" id="destino__2">
+        <div class="destinosDiv">
+            <p>Santorini</p>
+        </div>
+        <div class="subDestinos__seccion">
+            <div class="subDestinos__seccion__capsula">
+                <div class="subDestinos__seccion__capsula__data">
+                    <p class="letterSpacing">capsula <em>1</em></p>
+                    <h3>Atrevete a conocer Santorini</h3>
+                    <p>A medio camino entre Atenas y Creta se encuentra Santorini, la isla griega por excelencia: es Grecia como la imaginamos y soñamos, la Grecia de postal, la joya turística del país. <br> Las impresionantes vistas de la caldera, los extraordinarios
+                        colores de las formaciones rocosas y las espectaculares puestas de sol, te harán disfrutar unas vacaciones de ensueño.
+                    </p>
+                </div>
+                <div class="subDestinos__seccion__capsula__imgContainer capsula__imgDos">
+                    <img src="../img/destinos/santorini/santorini_3.jpg" alt="Costas de Santorini">
+                </div>
+            </div>
+            <div class="subDestinos__seccion__capsula reverse">
+                <div class="subDestinos__seccion__capsula__imgContainer capsula__imgDos">
+                    <img src="../img/destinos/santorini/santorini_4.jpg" alt="Peatonal de Santorini">
+                </div>
+                <div class="subDestinos__seccion__capsula__data">
+                    <p class="letterSpacing">capsula <em>2</em></p>
+                    <h3>Disfruta de su increíble y colorida arquitectura</h3>
+                    <p>Los característicos básicos de la arquitectura de Santorini, son la forma austera de los volúmenes, las paredes densas con las aberturas pequeñas y el color blanco característico de todas las islas cicladitas. <br> Hay también edificios
+                        colgados sobre el precipicio de Caldera, edificios tan ajustados que no se puede entender de donde empieza o termina cada uno.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="subDestinos__img">
+            <img id="subDestinos__imgDos" src="../img/destinos/santorini/santorini_1.jpg" alt="Costa de santorini">
+        </div>
+        <div class="destinosDiv">
+            <p>Una experiencia inolvidable</p>
+        </div>
+        <div class="subDestinos__seccion" id="markDos">
+            <div class="subDestinos__seccion__capsula">
+                <div class="subDestinos__seccion__capsula__data">
+                    <p class="letterSpacing">capsula <em>3</em></p>
+                    <h3>La deslumbrante Playa Roja de Santorini</h3>
+                    <p>Además del inusual color de la arena, Red Beach destaca por los inusuales paisajes que la rodean. Todo el mundo que viaja hasta esta playa se asegura de llevar una cámara consigo, pues esta belleza es de las más fotogénicas de la isla
+                        griega. El contraste entre las ardientes rocas rojas y el agua turquesa es simplemente increíble. Un destino que no podrás dejar pasar en Santorini.
+                    </p>
+                </div>
+                <div class="subDestinos__seccion__capsula__imgContainer capsula__imgDos">
+                    <img src="../img/destinos/santorini/santorini_2.jpg" alt="La playa roja">
+                </div>
+            </div>
+            <div class="subDestinos__seccion__capsula reverse">
+                <div class="subDestinos__seccion__capsula__imgContainer capsula__imgDos">
+                    <img src="../img/destinos/santorini/santorini_6.jpg" alt="Comida de grecia">
+                </div>
+                <div class="subDestinos__seccion__capsula__data">
+                    <p class="letterSpacing">capsula <em>4</em></p>
+                    <h3>Deleitate con la deliciosa comida Griega</h3>
+                    <p>La gastronomía de Grecia son la cocina y las artes culinarias practicadas por los habitantes de Grecia. Dada la geografía y la historia de Grecia, el estilo de cocina es típicamente mediterráneo, con técnicas e ingredientes compartidos
+                        con Italia.
+                    </p>
+                </div>
+            </div>
+            <div class="subDestinos__seccion__capsula">
+                <div class="subDestinos__seccion__capsula__data">
+                    <p class="letterSpacing">capsula <em>5</em></p>
+                    <h3>Finaliza tu aventura visitando el Partenón</h3>
+                    <p>Es un templo consagrado a la protectora de Atenas, Atenea Pártenos, y uno de los principales templos dóricos octóstilos, algo poco frecuente, de mármol blanco del Pentélico y cubierto con tejas de mármol de Paros.
+                    </p>
+                </div>
+                <div class="subDestinos__seccion__capsula__imgContainer capsula__imgDos">
+                    <img src="../img/destinos/santorini/santorini_5.jpg" alt="Partenón típico griego">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--============== footer ==================-->
+    <footer class="foot">
+        <div class="footNav">
+            <em class="travelnowFooter"><a href="index.html" class="anchorId">travelnow</a></em>
+            <div class="infoFooter">
+                <p class="addressFooter">Av. Córdoba 241 <br>8324 Cipolletti <br>Argentina</p>
+                <p class="contactFooter">info@travelnow.com <br>+54 9 299 6835020</p>
+            </div>
+            <ul class="footUrls" id="footUrlsId">
+                <li><a href="index.html">Página principal</a></li>
+                <li><a href="destinos.html">Destinos</a></li>
+                <li><a href="about.html">Acerca de</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+            <ul class="socialMedias">
+                <li><a href="#"><i class='bx bxl-facebook'></i></a></li>
+                <li><a href="#"><i class='bx bxl-twitter'></i></a></li>
+                <li><a href="#"><i class='bx bxl-instagram'></i></a></li>
+                <li><a href="#"><i class='bx bxl-github'></i></a></li>
+            </ul>
+            <div class="footerRule"></div>
+        </div>
+    </footer>
+
+    <!--========== gsap js ==========-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+
+    <!--========== swiper js ==========-->
+    <script src="../js/swiper-bundle.min.js"></script>
+
+    <!--========== main js ==========-->
+    <script src="../js/main.js"></script>
+    <!--========== bootstrap ==========-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

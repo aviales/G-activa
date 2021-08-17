@@ -1,0 +1,282 @@
+$firstColor: #fff;
+$secondColor: #000;
+$accentColor: rgb(255, 110, 110);
+$navColor: rgb(236, 236, 236);
+$thirdColor: rgb(230, 221, 215);
+
+/*=========== destinos ===========*/
+.subDestinos{
+    overflow: hidden;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-color: $thirdColor;
+}
+.subDestinos__seccion{
+    position: relative;
+    display: flex;
+    padding: 5vw;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    background-color: $thirdColor;
+}
+.subDestinos__seccion__capsula{
+    margin: 5vh;
+    width: 100%;
+    max-width: 80vw;
+    height: fit-content;
+    min-height: 350px;
+    display: flex;
+    overflow: hidden;
+    justify-content: space-between;
+    align-items: center;
+}
+.subDestinos__seccion__capsula__data{
+    width: 45%;
+    max-width: 35vw;
+}
+.subDestinos__seccion__capsula__data p{
+    font-family: 'Poppins', sans-serif;
+    font-size: var(--mediumFontSize);
+    line-height: 30px;
+}
+.letterSpacing{
+    letter-spacing: 5px;
+    font-weight: 300;
+}
+.subDestinos__seccion__capsula__data p em{
+    font-style: normal;
+    font-weight: 800;
+    color: $accentColor;
+}
+.subDestinos__seccion__capsula__data h3{
+    margin: 10% 0;
+    font-size: var(--bigFontSize);
+    font-weight: 600;
+}
+.subDestinos__seccion__capsula__imgContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    max-width: 50%;
+    overflow: hidden;
+}
+.subDestinos__seccion__capsula__imgContainer img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: filter 500ms, transform 500ms ease-in-out;
+    filter: grayscale(0) hue-rotate(0deg) saturate(1) blur(0px) brightness(1);
+}
+.subDestinos__seccion__capsula__imgContainer:hover img{
+    filter: grayscale(0.6) hue-rotate(10deg) saturate(1.5) blur(2px) brightness(0.6);
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.subDestinos__seccion__capsula__imgContainer::before{
+    content: "Descubrir";
+    z-index: 30;
+    position: absolute;
+    opacity: 0;
+    transform: scale(1.7);
+    transition: opacity 500ms, transform 500ms;
+    font-size: var(--bigFontSize);
+    font-weight: 400;
+    color: $firstColor;
+    text-shadow: 3px 3px 4px rgb(100, 100, 100);
+}
+.subDestinos__seccion__capsula__imgContainer:hover::before{
+    content: "Descubrir";
+    z-index: 30;
+    position: absolute;
+    opacity: 1;
+    transform: scale(1.2);
+}
+.popupSubDestinos{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    position: fixed;
+    z-index: 50;
+    top: 100%;
+    opacity: 0;
+    left: 0;
+    transition: top 0.5s, opacity 0.6s;
+}
+.popupReveal{
+    top: 0;
+    opacity: 1;
+}
+.popupClose{
+    position: absolute;
+    top: 9%;
+    right: 2%;
+    z-index: 50;
+    cursor: pointer;
+}
+.popupClose i{
+    font-size: var(--biggerFontSize);
+    color: $firstColor;
+    text-shadow: 3px 3px 5px rgb(0, 0, 0);;
+}
+.popupBackground{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(130deg,
+    rgba(48, 48, 48, 0.6),
+    rgba(29, 29, 29, 0.4));
+    backdrop-filter: blur(2px);
+}
+.swiperPopUp {
+    width: 90vw;
+    height: 70vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.swiperPopUp .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiperPopUp .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.subDestinos__img{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.subDestinos__img img{
+    position: relative;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+}
+.destinosDiv{
+    display: flex;
+    height: 50vh;
+    width: 100%;
+    z-index: 10;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(130deg,
+        rgba(71, 71, 71, 0.4),
+        rgba(10, 10, 10, 0.2));
+        backdrop-filter: blur(2px);
+}
+.destinosDiv p{
+    background-color: transparent;
+    font-size: var(--biggerFontSize);
+    font-weight: 300;
+    color: $firstColor;
+    text-shadow: 2px 2px 10px rgb(39, 39, 39);
+    letter-spacing: 5px;
+    text-align: center;
+}
+.destinos{
+    min-height: 100vh;
+    height: fit-content;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    display: flex;
+}  
+.destinosBg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    object-fit: cover;
+    object-position: center;
+}
+.destinosContainer{
+    position: relative;
+    min-height: 100%;
+    margin: 0 10vw 10vh 10vw;
+    display: grid;
+    grid-template-columns: auto;
+    align-content: center;
+}
+.destinosData{
+    background: linear-gradient(130deg,
+        rgba(161, 161, 161, 0.6),
+        rgba(184, 184, 184, 0.4));
+        backdrop-filter: blur(5px); 
+    padding: 60px;
+    border-radius: 15px;
+    max-width: 25vw;
+    min-width: 500px;
+}
+.destinosSubtitle, .destinosTitle, .destinosDescription{
+    color: $firstColor;
+}
+.destinosSubtitle{
+    font-size: var(--bigFontSize);
+    font-weight: 600;
+}
+.destinosTitle{
+    font-family: 'Poppins', sans-serif;
+    font-size: var(--biggestFontSize);
+    font-weight: 400;
+    line-height: 2.5;
+    margin: 0;
+}
+.destinosDescription{
+    font-size: var(--mediumFontSize);
+    margin-bottom: 2vh;
+    font-weight: 400;
+    color: $accentColor;
+    text-shadow: 1px 1px 2px rgba(45, 45, 45, 1);
+}
+/*=========== galleryControls ===========*/
+
+.controlsImg{
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 4px;
+    object-fit: cover;
+}
+.controls{
+    position: absolute;
+    bottom: 2vh;
+    left: 50%;
+    width: fit-content;
+    transform: translateX(-50%);
+    border-radius: 12px;
+    padding: 4px;
+    background-color: $thirdColor;
+    z-index: 50;
+}
+.controlsContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 16px;
+}
+
+/*=========== activeControls ===========*/
+
+.swiper-slide-thumb-active{
+    width: 60px;
+    height: 60px;
+}

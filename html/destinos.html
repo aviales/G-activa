@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--============== scrollReveal ==================-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--============== boxIcons ==================-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!--============== bootstrap.css ==================-->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!--========== swiperCss ==========-->
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+
+    <!--============== normalizeCss ==================-->
+    <link rel="stylesheet" href="../css/normalize.css">
+
+    <!--============== css ==================-->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!--============== fonts ==================-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100&family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+
+    <!--============== SEO ==================-->
+    <meta name="keywords" content="aerolínea argentina, agencia de viaje, viaje, vuelos, viajar, hoteleria, turismo, pasajes, bali, japon, vietnam">
+    <meta name="description" content="TravelNow ofrece multiples destinos para que vos elijas a donde te llevamos.">
+    <title>TravelNow - Destinos</title>
+    <link rel="icon" href="../img/genericas/plane_solid.png">
+</head>
+
+<body>
+    <!--============== navBar ==================-->
+    <div class="gradientNav" id="gradientNav"></div>
+    <header class="navBar">
+        <a href="index.html" class="logo anchorId">travelnow</a>
+        <nav class="navMenu" id="navMenuId">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li>
+                    <a href="destinos.html" class="hideMenu active" id="hideMenu">Destinos</a>
+                    <ul class="subMenu" id="subMenu">
+                        <a href="destinos.html#destino__0">
+                            <li class="subMenu1">Japan</li>
+                        </a>
+                        <a href="destinos.html#destino__1">
+                            <li class="subMenu2">Bali</li>
+                        </a>
+                        <a href="destinos.html#destino__2">
+                            <li class="subMenu3">Vietnam</li>
+                        </a>
+                    </ul>
+                </li>
+                <li><a href="ofertas.html">Ofertas</a></li>
+                <li><a href="about.html">Acerca de</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="navToggle" id="navToggleId">
+            <i class='bx bx-menu'></i>
+        </div>
+        <div class="navGoUp">
+            <a href="#top"><i class='bx bxs-arrow-to-top'></i></a></i>
+        </div>
+    </header>
+
+    <!--============== intro ==================-->
+    <div class="intro"></div>
+    <div class="outro"></div>
+    <div class="introSlider"></div>
+
+    <!--============== destinosGallery ==================-->
+    <main class="swiper-container gallery-top" id="top">
+        <div class="swiper-wrapper">
+            <section class="destinos swiper-slide">
+                <img src="../img/destinos/japon/japon_1.jpg" alt="Flores Típicas" class="destinosBg">
+                <div class="destinosContainer bd-container">
+                    <div class="destinosData">
+                        <h3 class="destinosSubtitle">Destinos</h3>
+                        <h1 class="destinosTitle">Japan</h1>
+                        <p class="destinosDescription">Un increíble destino te espera en Japón, podrás descubrir su fascinante cultura y paisajes.</p>
+                        <button class="button"><a href="#destino__0" class="text">Explorar mas</a> <i
+                                class='bx bxs-chevron-right'></i></button>
+                    </div>
+                </div>
+            </section>
+            <section class="destinos swiper-slide">
+                <img src="../img/destinos/bali/bali_1.jpg" alt="Costa de Bali" class="destinosBg">
+                <div class="destinosContainer bd-container">
+                    <div class="destinosData">
+                        <h3 class="destinosSubtitle">Destinos</h3>
+                        <h2 class="destinosTitle">Bali</h2>
+                        <p class="destinosDescription">En Bali un paraíso de relajación y bellos paisajes sera tu destino.</p>
+                        <button class="button"><a href="#destino__1" class="text">Explorar mas</a> <i
+                                class='bx bxs-chevron-right'></i></button>
+                    </div>
+                </div>
+            </section>
+            <section class="destinos swiper-slide">
+                <img src="../img/destinos/vietnam/vietnam_1.jpg" alt="Canoa en rio Mekong" class="destinosBg">
+                <div class="destinosContainer bd-container">
+                    <div class="destinosData">
+                        <h3 class="destinosSubtitle">Destinos</h3>
+                        <h2 class="destinosTitle">Vietnam</h2>
+                        <p class="destinosDescription">Vietnam el el destino perfecto para los aventureros que desean una experiencia nueva.</p>
+                        <button class="button"><a href="#destino__2" class="text">Explorar mas</a> <i
+                                class='bx bxs-chevron-right'></i></button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!--============== galleryControls ==================-->
+    <div class="controls gallery-thumbs">
+        <div class="controlsContainer swiper-wrapper">
+            <img src="../img/destinos/japon/japon_1.jpg" alt="Flores Típicas" class="controlsImg swiper-slide">
+            <img src="../img/destinos/bali/bali_1.jpg" alt="Costa de Bali" class="controlsImg swiper-slide">
+            <img src="../img/destinos/vietnam/vietnam_1.jpg" alt="Canoa en rio Mekong" class="controlsImg swiper-slide">
+        </div>
+    </div>
+
+
+    <!--============== destinos ==================-->
+    <!--============== destino cero ==================-->
+    <div class="popupSubDestinos" id="popupSubDestinosCero">
+        <div class="popupBackground"></div>
+        <div class="popupClose" id="popupClose"><i class='bx bx-x'></i></div>
+        <div class="swiper-container swiperPopUp">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="../img/destinos/japon/japon_4.jpg" alt="Cerezo en flor"></div>
+                <div class="swiper-slide"><img src="../img/destinos/japon/japon_3.jpg" alt="Gente con vestimentas típicas"></div>
+                <div class="swiper-slide"><img src="../img/destinos/japon/japon_2.jpg" alt="pasadizo de toriis"></div>
+                <div class="swiper-slide"><img src="../img/destinos/japon/japon_5.jpg" alt="Bandeja de sushi"></div>
+                <div class="swiper-slide"><img src="../img/destinos/japon/japon_6.jpg" alt="Vista aérea de montaña"></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+    <section class="subDestinos" id="destino__0">
+        <div class="destinosDiv">
+            <p>Japan</p>
+        </div>
+        <div class="subDestinos__seccion">
+            <div class="subDestinos__seccion__capsula">
+                <div class="subDestinos__seccion__capsula__data">
+                    <p class="letterSpacing">capsula <em>1</em></p>
+                    <h3>Atrevete a conocer Japón</h3>
+                    <p>Un increíble destino te espera en <b>La tierra del Sol Naciente</b>, está rodeada por el mar.<br> Las cálidas y frías corrientes de los mares crean un entorno que acoge una gran variedad de
+                        <b>especies de peces y una increíble vegetación.</b>
+                    </p>
+                </div>
+                <div class="subDestinos__seccion__capsula__imgContainer capsula__imgCero">
+                    <img src="../img/destinos/japon/japon_4.jpg" alt="Cerezo en flor">
+                </div>
+            </div>
+            <div class="subDestinos__seccion__capsula reverse">
+
+                <div class="subDestinos__seccion__capsula__imgContainer capsula__imgCero">
+                    <img src="../img/destinos/japon/japon_3.jpg" alt="Gente con vestimentas típicas">
+                </div>
+                <div class="subDestinos__seccion__capsula__data">
+                    <p class="letterSpacing">capsula <em>2</em></p>
+                    <h3>Disfruta de la cultura Japonesa</h3>
+                    <p><b>El Noh, el Kabuki y el Bunraku</b> son unas de las artes escénicas tradicionales japonesas que han existido desde la antigüedad. <br> El Kabuki se caracteriza por el ritmo de las frases declamadas por los actores, por la extravagancia
+                        del vestuario, por un maquillaje muy llamativo.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="subDestinos__img">
+            <img id="subDestinos__imgCero" src="../img/destinos/japon/japon_1.jpg" alt="Flor típica">
+        </div>
+        <div class="destinosDiv">
+            <p>Una experiencia inolvidable</p>
+        </div>
+        <div class="subDestinos__seccion" id="markCero">
+            <div class="subDestinos__seccion__capsula">
+                <div class="subDestinos__seccion__capsula__data">
+                    <p class="letterSpacing">capsula <em>3</em></p>
+                    <h3>Conoce el santuario Fushimi Inari-taisha</h3>
+                    <p> <b>Inari</b> es el dios del arroz y por consiguiente el patrón de los comerciantes esto explica una de las características del santuario que más llaman la atención: los miles de torii que encontramos uno detrás de otro, por sus <b>4 kilómetros de caminos</b>,
+                        que casi parecen formar un pasadizo techado y que han sido <b>donados por comerciantes</b> que ponen sus nombres o los de sus negocios en los torii para que el dios Inari les sea propicio.
+                    </p>
+                </div>
+                <div class="subDestinos__seccion__capsula__imgContainer capsula__imgCero">
+                    <img src="../img/destinos/japon/japon_2.jpg" alt="pasadizo de toriis">
+                </div>
+            </div>
+            <div class="subDestinos__seccion__capsula reverse">
+                <div class="subDestinos__seccion__capsula__imgContainer capsula__imgCero">
+                    <img src="../img/destinos/japon/japon_5.jpg" alt="Bandeja de sushi">
+                </div>
+                <div class="subDestinos__seccion__capsula__data">
+                    <p class="letterSpacing">capsula <em>4</em></p>
+                    <h3>Una experiencia gastronómica</h3>
+                    <p><b>La comida tradicional japonesa</b> consta de una ración de arroz blanco, que acompaña a un plato principal con una guarnición. <br> <b>El sushi, el tempura, el sukiyaki</b> y otras especialidades japonesas famosas en el extranjero
+                        también lo son dentro del propio Japón.
+                    </p>
+                </div>
+            </div>
+            <div class="subDestinos__seccion__capsula">
+                <div class="subDestinos__seccion__capsula__data">
+                    <p class="letterSpacing">capsula <em>5</em></p>
+                    <h3>Termina el dia con increíbles paisajes</h3>
+                    <p>Japón es una isla llena de magia con <b>geishas y maikos</b>, repleta de templos y santuarios exorbitantes. <br> Tiene una naturaleza increíble que deslumbra en cada estación del año con sus <b>colores, bosques, playas y montañas.</b>
+                    </p>
+                </div>
+                <div class="subDestinos__seccion__capsula__imgContainer capsula__imgCero">
+                    <img src="../img/destinos/japon/japon_6.jpg" alt="Vista aérea de montaña">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--============== destino uno ==================-->
+    <div class="popupSubDestinos" id="popupSubDestinosUno">
+        <div class="popupBackground"></div>
+        <div class="popupClose" id="popupClose"><i class='bx bx-x'></i></div>
+        <div class="swiper-container swiperPopUp">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="../img/destinos/bali/bali_3.jpg" alt="Templo al lado de rio"></div>
+                <div class="swiper-slide"><img src="../img/destinos/bali/bali_5.jpg" alt="Volcán Humeando"></div>
+                <div class="swiper-slide"><img src="../img/destinos/bali/bali_2.jpg" alt="Mujeres bailando"></div>
+                <div class="swiper-slide"><img src="../img/destinos/bali/bali_4.jpg" alt="Pilas de frutas"></div>
+                <div class="swiper-slide"><img src="../img/destinos/bali/bali_6.jpg" alt="Mono en rama"></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+    <section class="subDestinos" id="destino__1">
+        <div class="destinosDiv">
+            <p>Bali</p>
+        </div>
+        <div class="subDestinos__seccion">
+            <div class="subDestinos__seccion__capsula">
+                <div class="subDestinos__seccion__capsula__data">
+                    <p class="letterSpacing">capsula <em>1</em></p>
+                    <h3>Atrevete a conocer Bali</h3>
+                    <p>Bali es una <b>isla de Indonesia</b> conocida por sus frondosas montañas volcánicas, los icónicos
+                        <b>arrozales, las playas y los arrecifes de coral.</b> La isla alberga sitios religiosos, como el templo Uluwatu en un acantilado.<br> La isla también es famosa por sus lugares de retiro para el
+                        <b>yoga y la meditación.</b>
+                    </p>
+                </div>
+                <div class="subDestinos__seccion__capsula__imgContainer capsula__imgUno">
+                    <img src="../img/destinos/bali/bali_3.jpg" alt="Templo al lado de rio">
+                </div>
+            </div>
+            <div class="subDestinos__seccion__capsula reverse">
+                <div class="subDestinos__seccion__capsula__imgContainer capsula__imgUno">
+                    <img src="../img/destinos/bali/bali_5.jpg" alt="Volcán Humeando">
+                </div>
+                <div class="subDestinos__seccion__capsula__data">
+                    <p class="letterSpacing">capsula <em>2</em></p>
+                    <h3>Descubre el Monte Agung</h3>
+                    <p>Este volcán es el punto <b>más alto de la isla.</b> Domina el área que rodea influyendo en el clima.
+                        <br> Los balineses creen que el monte Agung es una <b>réplica del monte Meru, el eje central del
+                        universo.</b> Una leyenda sostiene que la montaña es un fragmento de Meru, traído a Bali por los primeros hindúes.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="subDestinos__img">
+            <img id="subDestinos__imgUno" src="../img/destinos/bali/bali_1.jpg" alt="Costa de Bali">
+        </div>
+        <div class="destinosDiv">
+            <p>Una experiencia inolvidable</p>
+        </div>
+        <div class="subDestinos__seccion" id="markUno">
+            <div class="subDestinos__seccion__capsula">
+                <div class="subDestinos__seccion__capsula__data">
+                    <p class="letterSpacing">capsula <em>3</em></p>
+                    <h3>Una increíble cultura te espera</h3>
+                    <p>Bali es un país con múltiples religiones, incluidas la <b>musulmana, cristiana y budista</b>, pero la religión predominante es el hinduismo. <br> La danza es también una forma muy popular de representar <b>la cultura de la gente de Bali.</b>                        Antes de su actuación, muchos bailarines rezan en sus santuarios familiares invocando a los "dioses" sagrados.
+                    </p>
+                </div>
+                <div class="subDestinos__seccion__capsula__imgContainer capsula__imgUno">
+                    <img src="../img/destinos/bali/bali_2.jpg" alt="Mujeres bailando">
+                </div>
+            </div>
+            <div class="subDestinos__seccion__capsula reverse">
+                <div class="subDestinos__seccion__capsula__imgContainer capsula__imgUno">
+                    <img src="../img/destinos/bali/bali_4.jpg" alt="Pilas de frutas">
+                </div>
+                <div class="subDestinos__seccion__capsula__data">
+                    <p class="letterSpacing">capsula <em>4</em></p>
+                    <h3>Disfruta de las Frutas mas frescas</h3>
+                    <p>De los alimentos que puedes encontrar en Bali, el que más atrae son sus <b>futuras exóticas.</b> Sus vívidos colores alegran la vista y sus intensos sabores avivan el paladar. <br> Entre las frutas mas exóticas podemos encontrar el
+                        <b>Durian, Salak y El Rambutan.</b> Sin duda una experiencia que no puedes dejar pasar en Bali.
+                    </p>
+                </div>
+            </div>
+            <div class="subDestinos__seccion__capsula">
+                <div class="subDestinos__seccion__capsula__data">
+                    <p class="letterSpacing">capsula <em>5</em></p>
+                    <h3>Finaliza tu aventura con el Templo de los Monos</h3>
+                    <p><b>Un templo hinduista</b> en el que habitan monos, visitar este rincón es algo imprescindible en todo recorrido por Bali y Ubud. Descubrirás la belleza de sus construcciones y <b>podrás "convivir"</b> unas horas con los amigables
+                        monos.
+                    </p>
+                </div>
+                <div class="subDestinos__seccion__capsula__imgContainer capsula__imgUno">
+                    <img src="../img/destinos/bali/bali_6.jpg" alt="Mono en rama">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--============== destino dos ==================-->
+    <div class="popupSubDestinos" id="popupSubDestinosDos">
+        <div class="popupBackground"></div>
+        <div class="popupClose" id="popupClose"><i class='bx bx-x'></i></div>
+        <div class="swiper-container swiperPopUp">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="../img/destinos/vietnam/vietnam_4.jpg" alt="Paisaje de montaña"></div>
+                <div class="swiper-slide"><img src="../img/destinos/vietnam/vietnam_6.jpg" alt="Manos sosteniendo puente"></div>
+                <div class="swiper-slide"><img src="../img/destinos/vietnam/vietnam_2.jpg" alt="catedral con aves"></div>
+                <div class="swiper-slide"><img src="../img/destinos/vietnam/vietnam_5.jpg" alt="Mujeres navegando canoa"></div>
+                <div class="swiper-slide"><img src="../img/destinos/vietnam/vietnam_3.jpg" alt="Vista de pagoda"></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+    <section class="subDestinos" id="destino__2">
+        <div class="destinosDiv">
+            <p>Vietnam</p>
+        </div>
+        <div class="subDestinos__seccion">
+            <div class="subDestinos__seccion__capsula">
+                <div class="subDestinos__seccion__capsula__data">
+                    <p class="letterSpacing">capsula <em>1</em></p>
+                    <h3>Atrevete a conocer Vietnam</h3>
+                    <p>Vietnam es uno de los destinos más completos del <b>Sudeste Asiático.</b> Aquí encontraremos terrazas de arroz de color <b>verde intenso</b> y playas idílicas de <b>arena blanca.</b> <br> Navegaremos por los miles de islotes de la
+                        bahía de Halong o en una pequeña barca por los <b>mercados flotantes</b> del río Mekong .
+                    </p>
+                </div>
+                <div class="subDestinos__seccion__capsula__imgContainer capsula__imgDos">
+                    <img src="../img/destinos/vietnam/vietnam_4.jpg" alt="Paisaje de montaña">
+                </div>
+            </div>
+            <div class="subDestinos__seccion__capsula reverse">
+                <div class="subDestinos__seccion__capsula__imgContainer capsula__imgDos">
+                    <img src="../img/destinos/vietnam/vietnam_6.jpg" alt="Manos sosteniendo puente">
+                </div>
+                <div class="subDestinos__seccion__capsula__data">
+                    <p class="letterSpacing">capsula <em>2</em></p>
+                    <h3>Un paseo por el Golden Bridge</h3>
+                    <p>Dos <b>manos gigantes</b> surgidas de la tierra sostienen, como suspendido sobre la montaña, un enorme
+                        <b>puente dorado.</b> Situado en Ba Na Hills, en Da Nang, Vietnam. <br> Visitarlo es una oportunidad que no podrás dejar pasar en tu visita a Vietnam.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="subDestinos__img">
+            <img id="subDestinos__imgDos" src="../img/destinos/vietnam/vietnam_1.jpg" alt="Canoa en rio Mekong">
+        </div>
+        <div class="destinosDiv">
+            <p>Una experiencia inolvidable</p>
+        </div>
+        <div class="subDestinos__seccion" id="markDos">
+            <div class="subDestinos__seccion__capsula">
+                <div class="subDestinos__seccion__capsula__data">
+                    <p class="letterSpacing">capsula <em>3</em></p>
+                    <h3>Basílica Notre-Dam de Saigón</h3>
+                    <p><b>Es una catedral y basílica menor católica</b> localizada en el centro de la ciudad Ho Chi Minh, (Vietnam). Fue construida por los colonos franceses en 1863. <br> Su <b>increíble arquitectura</b> es una visita que no podrás dejar
+                        pasar en Vietnam. </p>
+                </div>
+                <div class="subDestinos__seccion__capsula__imgContainer capsula__imgDos">
+                    <img src="../img/destinos/vietnam/vietnam_2.jpg" alt="Catedral con aves">
+                </div>
+            </div>
+            <div class="subDestinos__seccion__capsula reverse">
+                <div class="subDestinos__seccion__capsula__imgContainer capsula__imgDos">
+                    <img src="../img/destinos/vietnam/vietnam_5.jpg" alt="Mujeres navegando canoa">
+                </div>
+                <div class="subDestinos__seccion__capsula__data">
+                    <p class="letterSpacing">capsula <em>4</em></p>
+                    <h3>Da un paseo por el río Mekong</h3>
+                    <p>El río Mekong nace en la <b>cordillera del Himalaya</b> y desemboca en el mar de China Meridional tras haber <b>recorrido 4.350 km</b>, que lo convierten en el río más largo del sudeste de Asia. <br> Un paseo por este <b>hermoso río al atardecer</b>                        hará que tu estadía en Vietnam sea inolvidable.
+                    </p>
+                </div>
+            </div>
+            <div class="subDestinos__seccion__capsula">
+                <div class="subDestinos__seccion__capsula__data">
+                    <p class="letterSpacing">capsula <em>5</em></p>
+                    <h3>Termina tu aventura conociendo Tran Quoc</h3>
+                    <p>La arquitectura y simbología de esta <b>pagoda</b> no te dejaran indiferente, es de <b>estilo marcadamente
+                        budista</b> y alcanza los 15 metros de altura con sus 11 niveles. <br> La Pagoda de Tran Quoc tiene el honor y el orgullo de ser <b>la pagoda más antigua de todo Hanoi</b>, fue construida en el año 545.
+                    </p>
+                </div>
+                <div class="subDestinos__seccion__capsula__imgContainer capsula__imgDos">
+                    <img src="../img/destinos/vietnam/vietnam_3.jpg" alt="Vista de pagoda">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--============== footer ==================-->
+    <footer class="foot">
+        <div class="footNav">
+            <em class="travelnowFooter"><a href="index.html" class="anchorId">travelnow</a></em>
+            <div class="infoFooter">
+                <p class="addressFooter">Av. Cordoba 241 <br>8324 Cipolletti <br>Argentina</p>
+                <p class="contactFooter">info@travelnow.com <br>+54 9 299 6835020</p>
+            </div>
+            <ul class="footUrls" id="footUrlsId">
+                <li><a href="index.html">Página principal</a></li>
+                <li><a href="ofertas.html">Ofertas</a></li>
+                <li><a href="about.html">Acerca de</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+            <ul class="socialMedias">
+                <li><a href="#"><i class='bx bxl-facebook'></i></a></li>
+                <li><a href="#"><i class='bx bxl-twitter'></i></a></li>
+                <li><a href="#"><i class='bx bxl-instagram'></i></a></li>
+                <li><a href="#"><i class='bx bxl-github'></i></a></li>
+            </ul>
+            <div class="footerRule"></div>
+        </div>
+    </footer>
+
+    <!--========== gsap js ==========-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+
+    <!--========== swiper js ==========-->
+    <script src="../js/swiper-bundle.min.js"></script>
+
+    <!--========== main js ==========-->
+    <script src="../js/main.js"></script>
+    <!--========== bootstrap ==========-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

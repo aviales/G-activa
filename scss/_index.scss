@@ -1,0 +1,197 @@
+$firstColor: #fff;
+$secondColor: #000;
+$accentColor: rgb(255, 110, 110);
+$navColor: rgb(236, 236, 236);
+$thirdColor: rgb(230, 221, 215);
+
+/*============== index ==============*/
+/*============== mainSecction ==============*/
+
+.mainPage{
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+}
+.bgindex{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.bgindex img{
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.gradientMain{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: linear-gradient(130deg,
+    rgba(66, 65, 65, 0.2),
+    rgba(87, 87, 87, 0.1));
+    backdrop-filter: blur(5px);    
+}
+.firstSection {
+    text-align: left;
+    position: absolute;
+    top: 5%;
+    width: 100%;
+    padding: 30vh 15vw 0 15vw;
+}
+.headerOne{
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    font-size: var(--biggestFontSize);
+    font-weight: 400;
+    color: $firstColor;
+    text-shadow:0px 3px 6px rgba(53, 53, 53, 0.705);
+}
+.textOne{
+    top: -25px;
+    position: relative;
+    font-size: var(--mediumFontSize);
+    font-weight: 400;
+    color: $accentColor;
+    text-shadow:0px 3px 6px rgba(53, 53, 53, 0.705);
+}
+.mainButton{
+    position: absolute;
+    transform: translateX(-50%);
+    transform: translateY(0);
+    top: 90vh;
+    right: 5vw;
+    height: var(--biggerFontSize);
+    width: var(--biggerFontSize);
+    animation-name: efectoFlecha;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1s;
+    animation-delay: 5s;
+}
+.bxs-arrow-to-bottom{
+    color: $accentColor;
+    font-size: var(--biggerFontSize);
+    position: relative;
+    animation-name: efectoFlecha;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1s;
+    animation-delay: 3s;
+}
+@keyframes efectoFlecha{
+    0%{ transform: translateY(0); }
+    50%{ transform: translateY(-2vh); }
+    100%{ transform: translateY(0); }
+}
+/*============== sectionTwo ==============*/
+
+.sectionTwo{
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+.rightFloat{
+    position: absolute;
+    left: 40%;
+    top: 0;
+    height: 100%;
+    width: 70%;
+    background-color: $thirdColor;
+}
+.sectionTwoRule{
+    position: absolute;
+    top: 10%;
+    width: 100%;
+    height: 1px;
+    background-color: $accentColor;
+}
+.leftFloat{
+    position: relative;
+    width: 55%;
+    height: 100%;
+    overflow: hidden;
+}
+.leftFloat img{
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.textSectionTwo{
+    position: relative;
+    bottom: 70%;
+    right: -45%;
+    margin-right: 5%;
+    max-width: 45%;
+}
+.textSectionTwo p{
+    font-size: var(--biggestFontSize);
+    font-weight:300;
+    line-height: 80px;
+}
+.travelnowWord{
+    color: $accentColor;
+    font-style: normal;
+    font-weight: 400;
+}
+
+/*============== sectionThree ==============*/
+.sectionThree{
+    width: 100vw;
+    min-height: 70vh;
+    position: relative;
+    overflow: hidden;
+    background-color: $thirdColor;
+    display: flex;
+
+    .sectionThreeData{
+        width: 40%;
+        align-items: flex-start;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        position: relative;
+
+        h3{
+            font-size: var(--biggerFontSize);
+            font-weight: 300;
+            line-height: 80px;
+            margin: 0 5% 5% 5%;
+
+            em{
+                font-style: normal;
+                font-weight: 400;
+                color: $accentColor;
+            }
+        }
+        button{
+            border-color: $accentColor;
+            margin: 0 5%;
+
+            a{
+                color: $secondColor;
+            }
+        }
+    }
+    .sectionThreeRule{
+        position: absolute;
+        top: 10%;
+        left: -6%;
+        width: 90%;
+        height: 1px;
+        background-color: $accentColor;
+    }
+    .sectionThreeImg{
+        width: 61%;
+        height: 70vh;
+        img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}
