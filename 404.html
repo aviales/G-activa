@@ -8,40 +8,42 @@
     <!--============== scrollReveal ==================-->
     <script src="https://unpkg.com/scrollreveal"></script>
 
+
     <!--============== boxIcons ==================-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.2.0/tailwind.min.css">
 
     <!--============== bootstrap.css ==================-->
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    <!--============== normalizeCss ==================-->
-    <link rel="stylesheet" href="../css/normalize.css">
-
-    <!--============== css ==================-->
-    <link rel="stylesheet" href="../css/style.css">
-
-    <!--============== fonts ==================-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100&family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!--============== normalizeCss ==================-->
+    <!-- <link rel="stylesheet" href="../css/aos.css"> -->
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <!--============== css ==================-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--============== fonts ==================-->
+
     <!--============== SEO ==================-->
-    <meta name="keywords" content="aerolínea ">
-    <meta name="description" content="Conupuestos">
-    <title>G-activa
-    </title>
-    <link rel="icon" href="../img/genericas/plane_solid.png">
+    <meta name="keywords" content="Emprededurismo,Guanacaste">
+    <meta name="description" content="Con Guanacaste Activa">
+    <title>Guanacaste Activa</title>
+    <link rel="icon" href="img/genericas/plane_solid.png">
 </head>
 
 <body>
     <!--============== navBar ==================-->
     <div class="gradientNav" id="gradientNav"></div>
     <header class="navBar">
-        <a href="index.html" class="logo anchorId">travelnow</a>
+        <a href="index.html" class="logo anchorId"></a>
         <nav class="navMenu" id="navMenuId">
             <ul>
-                <li><a href="index.html">Inicio</a></li>
+                <li class="mr-4"><a href="index.html" class="active">Inicio</a></li>
                 <li>
-                    <a href="destinos.html" class="hideMenu" id="hideMenu">Destinos</a>
+                    <a href="destinos.html" class="hideMenu" id="hideMenu">Nuestros Proyectos</a>
                     <ul class="subMenu" id="subMenu">
                         <a href="destinos.html#destino__0">
                             <li class="subMenu1">Japan</li>
@@ -54,8 +56,10 @@
                         </a>
                     </ul>
                 </li>
-                <li><a href="ofertas.html">Ofertas</a></li>
-                <li><a href="about.html">Acerca de</a></li>
+                <li>
+                    <a href="services.html">Nuestros Servicios</a>
+                </li>
+                <li><a href="about.html">Quienes Somos</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
@@ -74,7 +78,7 @@
 
     <!--========== page 404 ==========-->
     <main class="errorMain">
-        <img src="../img/genericas/generic_6.jpg" alt="Cartel indicativo en montaña">
+        <img src="https://www.guanactiva.com/wp-content/uploads/2021/06/Nueva-portada-Guanactiva-1-150x150.png" alt="Cartel indicativo en montaña">
         <div class="errorGradient"></div>
         <div class="errorContainer">
             <h1>404</h1>
@@ -87,37 +91,55 @@
         </div>
     </main>
 
+    <!--============== redes sociales ==================-->
+    <section>
+        <div class="col-xl-12 white_fonts ">
+            <div class="user_links col-lg-12 mt-2">
+                <h5 class="text-white text-lg-center " style="color: aqua;">Redes sociales</h5>
+                <hr style="background-color: #c3c3c3; ">
+                <div class="row d-flex justify-content-between ">
+                    <div class="contenedor container-fluid">
+                        <div class="redes-sociales2" id="contacto">
+                            <a href="https://cr.linkedin.com/" target="_blank" class="social linkedin" title="Linkedin"><i class=""></i></a>
+                            <a href="https://www.facebook.com" target="_blank" class="social facebook" title="Facebook"><i
+                    class="bx bxl-facebook"></i></a>
+                            <a href="https://api.whatsapp.com/send?phone=+5068&amp;text=Estoy interesado en tomar tu solicitud de informacion sobre consultorias de" target="_blank" class="social whatsapp" title="whatsapp">
+                                <i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+                            <a href="https://www.twitter.com " target="_blank " class="social twitter " title="Twitter "><i
+                                class="bx bxl-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!--============== footer ==================-->
     <footer class="foot">
         <div class="footNav">
-            <em class="travelnowFooter"><a href="index.html" class="anchorId">travelnow</a></em>
+            <em class="travelnowFooter"><a href="index.html" class="anchorId">Guanacaste Activa</a></em>
             <div class="infoFooter">
-                <p class="addressFooter">Av. Cordoba 241 <br>8324 Cipolletti <br>Argentina</p>
-                <p class="contactFooter">info@travelnow.com <br>+54 9 299 6835020</p>
+                <p class="addressFooter">Barrio Buenos Aires<br>Santa Cruz,Guanacaste <br>Costa Rica</p>
+                <p class="contactFooter">info@.com <br>+506 6835020</p>
             </div>
             <ul class="footUrls" id="footUrlsId">
-                <li><a href="index.html">Página principal</a></li>
                 <li><a href="destinos.html">Destinos</a></li>
                 <li><a href="ofertas.html">Ofertas</a></li>
+                <li><a href="about.html">Acerca de</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-            <ul class="socialMedias">
-                <li><a href="#"><i class='bx bxl-facebook'></i></a></li>
-                <li><a href="#"><i class='bx bxl-twitter'></i></a></li>
-                <li><a href="#"><i class='bx bxl-instagram'></i></a></li>
-                <li><a href="#"><i class='bx bxl-github'></i></a></li>
             </ul>
             <div class="footerRule"></div>
         </div>
     </footer>
 
     <!--========== gsap js ==========-->
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <!--========== swiper js ==========-->
+    <!--============== scrollReveal ==================-->
+    <script src="https://unpkg.com/scrollreveal"></script>
     <!--========== swiper js ==========-->
     <script src="../js/swiper-bundle.min.js"></script>
-
-    <!--========== bootstrap ==========-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 
     <!--========== main js ==========-->
     <script src="../js/main.js"></script>
