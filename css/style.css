@@ -1722,6 +1722,9 @@ body {
     .textSectionTwo p {
         line-height: 65px;
     }
+    .textSectionFour p {
+        line-height: 15px;
+    }
     .footNav {
         margin: 0 5% 0 5%;
     }
@@ -1739,8 +1742,13 @@ body {
         bottom: 40%;
         max-width: 100%;
     }
-    .textSectionTwo p {
-        font-size: var(--biggerFontSize);
+    .textSectionfour {
+        right: -5%;
+        bottom: 40%;
+        max-width: 100%;
+    }
+    .textSectionFour p {
+        font-size: var(--smallFontSize);
     }
     .leftFloat {
         z-index: 20;
@@ -1824,13 +1832,15 @@ body {
 
 @media (max-width: 480px) {
     .textSectionTwo p {
-        font-size: var(--bigFontSize);
+        font-size: var(--mediumFontSize);
+    }
+    .textSectionFour p {
+        font-size: var(--smallFontSize);
     }
     .footNav {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 4fr 5fr 1fr;
-        min-height: fit-content;
     }
     .travelnowFooter {
         grid-column-start: 0;
@@ -1916,6 +1926,9 @@ body {
     }
     .textSectionTwo p {
         line-height: 50px;
+    }
+    .textSectionFour p {
+        line-height: 20px;
     }
 }
 
@@ -2242,6 +2255,12 @@ body {
 }
 
 @media (max-width:700px) and (min-width:500px) {
+    .texto {
+        font-size: 12px;
+    }
+}
+
+media (max-width:700px) and (min-width:500px) {
     .texto {
         font-size: 12px;
     }
