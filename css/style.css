@@ -1321,7 +1321,7 @@ body {
 }
 
 .navBar a {
-    font-weight: 600;
+    font-weight: 400;
     transition: 0.2s;
 }
 
@@ -1342,7 +1342,7 @@ body {
 }
 
 .navMenu {
-    width: 70%;
+    width: 120%;
     height: unset;
     display: flex;
     position: unset;
@@ -1352,7 +1352,7 @@ body {
 
 .navMenu a {
     color: #ececec;
-    font-size: var(--mediumFontSize);
+    font-size: var(--smallFontSize);
 }
 
 .navMenu ul {
