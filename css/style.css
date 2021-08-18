@@ -155,7 +155,7 @@
 }
 
 .textSectionTwo p {
-    font-size: var(--bigFontSize);
+    font-size: var(--mediumFontSize);
     font-weight: 200;
     line-height: 60px;
 }
@@ -189,9 +189,16 @@
 }
 
 .sectionThree .sectionThreeData h3 {
-    font-size: var(--biggerFontSize);
+    font-size: var(--mediumFontSize);
     font-weight: 300;
     line-height: 80px;
+    margin: 0 5% 5% 5%;
+}
+
+.sectionThree .sectionThreeData h4 {
+    font-size: var(--mediumFontSize);
+    font-weight: 300;
+    line-height: 50px;
     margin: 0 5% 5% 5%;
 }
 
@@ -221,7 +228,7 @@
 
 .sectionThree .sectionThreeImg {
     width: 51%;
-    height: 70vh;
+    height: auto;
 }
 
 .sectionThree .sectionThreeImg img {
@@ -1722,9 +1729,6 @@ body {
     .textSectionTwo p {
         line-height: 65px;
     }
-    .textSectionFour p {
-        line-height: 15px;
-    }
     .footNav {
         margin: 0 5% 0 5%;
     }
@@ -1742,13 +1746,8 @@ body {
         bottom: 40%;
         max-width: 100%;
     }
-    .textSectionfour {
-        right: -5%;
-        bottom: 40%;
-        max-width: 100%;
-    }
-    .textSectionFour p {
-        font-size: var(--smallFontSize);
+    .textSectionTwo p {
+        font-size: var(--bigFontSize);
     }
     .leftFloat {
         z-index: 20;
@@ -1762,6 +1761,7 @@ body {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 4fr 2fr;
+        min-height: fit-content;
     }
     .travelnowFooter {
         grid-column-start: 0;
@@ -1832,10 +1832,7 @@ body {
 
 @media (max-width: 480px) {
     .textSectionTwo p {
-        font-size: var(--mediumFontSize);
-    }
-    .textSectionFour p {
-        font-size: var(--smallFontSize);
+        font-size: var(--bigFontSize);
     }
     .footNav {
         display: grid;
@@ -1926,10 +1923,7 @@ body {
     }
     .textSectionTwo p {
         line-height: 50px;
-    }
-    .textSectionFour p {
-        line-height: 10px;
-        font-size: var(--smallFontSize);
+        font-size: var( --smallFontSize);
     }
 }
 
@@ -2256,12 +2250,6 @@ body {
 }
 
 @media (max-width:700px) and (min-width:500px) {
-    .texto {
-        font-size: 12px;
-    }
-}
-
-media (max-width:700px) and (min-width:500px) {
     .texto {
         font-size: 12px;
     }

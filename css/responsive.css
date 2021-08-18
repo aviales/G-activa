@@ -95,7 +95,7 @@
     }
     .top-header .navbar .navbar-collapse ul li a:hover,
     .top-header .navbar .navbar-collapse ul li a:focus {
-        color: #0892fd;
+        color: #7d4e5b;
     }
     .slide_text p {
         display: none;
@@ -287,7 +287,7 @@
     .contact_bt {
         width: 90px;
         height: 35px;
-        background: #07528d;
+        background: #7d4e5b;
         color: #fff;
         float: left;
         line-height: 36px;
