@@ -189,7 +189,7 @@
 }
 
 .sectionThree .sectionThreeData h3 {
-    font-size: var(--mediumFontSize);
+    font-size: var(--bigFontSize);
     font-weight: 300;
     line-height: 80px;
     margin: 0 5% 5% 5%;
@@ -1721,7 +1721,7 @@ body {
 @media (max-width: 768px) {
      :root {
         --smallFontSize: 14px;
-        --mediumFontSize: 18px;
+        --mediumFontSize: 16px;
         --bigFontSize: 30px;
         --biggerFontSize: 40px;
         --biggestFontSize: 50px;
@@ -1923,7 +1923,7 @@ body {
     }
     .textSectionTwo p {
         line-height: 50px;
-        font-size: var( --mediumFontSize);
+        font-size: var( --smallFontSize);
     }
 }
 
