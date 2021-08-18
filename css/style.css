@@ -1928,7 +1928,8 @@ body {
         line-height: 50px;
     }
     .textSectionFour p {
-        line-height: 20px;
+        line-height: 10px;
+        font-size: var(--smallFontSize);
     }
 }
 
