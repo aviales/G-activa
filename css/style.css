@@ -1485,7 +1485,7 @@ body {
 .introElements {
     color: #fff;
     font-family: 'Poppins', sans-serif;
-    font-size: var(--biggerFontSize);
+    font-size: var(--biggestFontSize);
     margin: 0 5vw;
 }
 
