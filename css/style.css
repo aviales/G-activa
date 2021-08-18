@@ -110,7 +110,7 @@
 /*============== sectionTwo ==============*/
 
 .sectionTwo {
-    height: 100vh;
+    height: 110vh;
     position: relative;
     overflow: hidden;
 }
@@ -128,7 +128,7 @@
     position: absolute;
     top: 10%;
     width: 100%;
-    height: 1px;
+    height: auto;
     background-color: #7d4e5b;
 }
 
@@ -171,7 +171,7 @@
 
 .sectionThree {
     width: 100vw;
-    min-height: 70vh;
+    min-height: 90vh;
     position: relative;
     overflow: hidden;
     background-color: #e6ddd7;
@@ -1649,7 +1649,7 @@ body {
     .sectionThree .sectionThreeData {
         width: 100%;
         min-height: 50vh;
-        height: fit-content;
+        height: 100%;
     }
     .sectionThree .sectionThreeData h3 {
         margin-top: 10%;
@@ -1658,8 +1658,8 @@ body {
         margin-bottom: 10%;
     }
     .sectionThree .sectionThreeImg {
-        width: 97%;
-        height: auto;
+        width: 100%;
+        height: 100%;
     }
     .subDestinos__seccion__capsula {
         flex-direction: column;
@@ -1747,7 +1747,7 @@ body {
         max-width: 100%;
     }
     .textSectionTwo p {
-        font-size: var(--bigFontSize);
+        font-size: var(--mediumFontSize);
     }
     .leftFloat {
         z-index: 20;
@@ -1922,7 +1922,7 @@ body {
         --biggestFontSize: 40px;
     }
     .textSectionTwo p {
-        line-height: 50px;
+        line-height: 30px;
         font-size: var( --smallFontSize);
     }
 }
