@@ -1448,17 +1448,17 @@ body {
     display: block;
     position: relative;
     top: 0;
-    min-height: 40%;
+    min-height: fit-content;
     opacity: 1;
-    background-color: #000;
+    background-color: #7d4e5b;
 }
 
 .foot .footUrls li {
-    padding-bottom: 40px;
+    padding-bottom: 30px;
 }
 
 .foot ul li {
-    padding-bottom: 30px;
+    padding-bottom: 20px;
 }
 
 .foot a {
@@ -1468,13 +1468,13 @@ body {
 }
 
 .foot a:hover {
-    color: #7d4e5b;
+    color: #FAAF3F;
     transition: 0.33333s;
 }
 
 .footNav {
     justify-content: space-between;
-    margin: 0 20% 0 20%;
+    margin: 0 10% 0 10%;
     padding: 5vh 0 5vh 0;
     display: flex;
 }
@@ -1830,6 +1830,7 @@ body {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 4fr 5fr 1fr;
+        min-height: fit-content;
     }
     .travelnowFooter {
         grid-column-start: 0;
