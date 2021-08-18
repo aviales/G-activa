@@ -205,16 +205,16 @@
 .sectionThree .sectionThreeData h3 em {
     font-style: normal;
     font-weight: 400;
-    color: #7d4e5b;
+    color: #FAAF3F;
 }
 
 .sectionThree .sectionThreeData button {
-    border-color: #7d4e5b;
+    border-color: #a7a7a7;
     margin: 0 5%;
 }
 
 .sectionThree .sectionThreeData button a {
-    color: #000;
+    color: #fff;
 }
 
 .sectionThree .sectionThreeRule {
@@ -386,7 +386,7 @@
 }
 
 .read-more a {
-    color: #458FF6;
+    color: #fff;
     font-weight: bold;
     letter-spacing: 1.5px;
     transition: .5s;
@@ -423,13 +423,13 @@
 }
 
 .view-all a {
-    padding: 10px;
+    padding: 0px;
     padding-left: 35px;
     padding-right: 35px;
     border-radius: 30px;
-    color: #458FF6;
+    color: #fff;
     font-weight: bold;
-    border: 1px solid #458FF6;
+    border: 1px solid #7d4e5b;
     text-decoration: none;
     letter-spacing: 1.5px;
     transition: .5s;
@@ -438,7 +438,7 @@
 .view-all a:hover {
     color: #ffffff;
     text-decoration: none;
-    background-color: #458FF6;
+    background-color: #FAAF3F;
 }
 
 
@@ -1276,14 +1276,14 @@ body {
 }
 
 .button a {
-    color: #fff;
-    text-shadow: 0px 3px 6px rgba(136, 136, 136, 0.87);
+    color: #FAAF3F;
+    text-shadow: 0px 3px 6px#fff;
     transition: color 0.33333s;
     transition: text-shadow 0.33333s;
 }
 
 .button:hover {
-    background-color: #fff;
+    background-color: #FAAF3F;
     padding-right: 30px;
     padding-left: 10px;
 }
@@ -1659,7 +1659,7 @@ body {
     }
     .sectionThree .sectionThreeImg {
         width: 97%;
-        height: 50vh;
+        height: auto;
     }
     .subDestinos__seccion__capsula {
         flex-direction: column;
@@ -1832,7 +1832,7 @@ body {
 
 @media (max-width: 480px) {
     .textSectionTwo p {
-        font-size: var(--bigFontSize);
+        font-size: var(--mediumFontSize);
     }
     .footNav {
         display: grid;
@@ -1923,7 +1923,7 @@ body {
     }
     .textSectionTwo p {
         line-height: 50px;
-        font-size: var( --smallFontSize);
+        font-size: var( --mediumFontSize);
     }
 }
 
@@ -1980,7 +1980,8 @@ body {
     justify-content: center;
     align-items: center;
     border-radius: 100%;
-    background: #FAAF3F;
+    background-image: url(../img/Logo-png.png);
+    background-repeat: no-repeat;
     opacity: 0;
     transition: ease all 0.2s;
 }
