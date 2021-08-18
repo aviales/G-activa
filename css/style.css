@@ -155,7 +155,7 @@
 }
 
 .textSectionTwo p {
-    font-size: var(--biggestFontSize);
+    font-size: var(--bigFontSize);
     font-weight: 200;
     line-height: 60px;
 }
@@ -2178,4 +2178,10 @@ body {
 .responsive {
     max-width: 100%;
     height: auto;
+}
+
+@media (max-width:700px) and (min-width:500px) {
+    .texto {
+        font-size: 12px;
+    }
 }
